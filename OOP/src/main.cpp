@@ -4,10 +4,32 @@ using namespace std;
 
 int main()
 {
-    Rectangle rect;
-    rect.set_values(5,7);
+    //using object : calling counstructor
+    Rectangle rectc = Rectangle();
+    
+    //Rectangle rectd(); //This will throw an error becaus empty parentheses were disambiguated as a function declaration
+    //Other valid ways of calling it are:
+    //Rectangle rectc;
+    //Rectangle rectc{};
+
+    int areac = rectc.area();
+    cout << "[Object]Area is:" << areac << endl;
+    
+    //using object : contructor overloading
+    Rectangle rect(5,7);
+    //This is not needed if Constructor is called
+    //rect.set_values(5,7);
     int area = rect.area();
-    std::cout << "Area is:" << area << std::endl;
+    cout << "[Object]Area is:" << area << endl;
+
+
+    //using pointer
+    Rectangle *rectp = new Rectangle(6,8);
+    //This is not needed if Constructor is called
+    rectp->set_values(6,8);
+    int areap = rectp->area();
+    cout << "[Pointer]Area is:" << areap << endl;
+    
 }
 
 
