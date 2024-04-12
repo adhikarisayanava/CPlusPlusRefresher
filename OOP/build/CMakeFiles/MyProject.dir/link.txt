@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MyProject.dir/src/main.cpp.o CMakeFiles/MyProject.dir/src/rect.cpp.o -o MyProject 
