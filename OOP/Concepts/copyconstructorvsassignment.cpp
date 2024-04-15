@@ -16,7 +16,7 @@ class Test
 {
     public:
         Test() {} //Constructor
-        Test(const Test&)
+        Test(const Test&) //Copy Constructor
         {
             cout << "Copy constructor is called" << endl;
         }
