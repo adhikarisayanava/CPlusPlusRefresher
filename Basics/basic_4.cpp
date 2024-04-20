@@ -43,8 +43,8 @@ void tryin_C_String()
 {
     char myntcs[] = "some text";
     string mystring = myntcs;  // convert c-string to string
-    cout << mystring << endl;  // printed as a library string
-    cout << mystring.c_str();  // printed as a c-string
+    cout << "\nnormal string:" << mystring << endl;  // printed as a library string
+    cout << "c-string:" << mystring.c_str() << endl;  // printed as a c-string
 }
 
 int main()
@@ -63,11 +63,12 @@ int main()
     int bar[] = {20,15,3,12,120};
     printarray(bar, 5);
     
-    //////////////////////////////////////////////////////////
+ */
+   //////////////////////////////////////////////////////////
     //Standard Template Library CONTAINER arrays
     array<int, 5> bar = {1, 2, 3, 4, 5};
     printSTLarray(bar);
-*/
+
     //array_of_char();
     tryin_C_String();
 

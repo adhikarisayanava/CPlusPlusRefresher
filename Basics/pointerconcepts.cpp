@@ -68,7 +68,7 @@ void trying_pointers_consts()
     //int * const p = &y;  //case2) const pointer to non-const int
     //const int * const p = &y;  //case3) const pointer to const int
     x = *p;
-    cout << "x is:" << x << endl;
+    cout << "x is:" << x << endl; //10
     //*p = z; //case1)will throw error assignment of read-only location '* p'
     //p = &z; //case2)will throw error assignment of read-only variable 'p'
     //Both the above errors will be thrown in case3)
